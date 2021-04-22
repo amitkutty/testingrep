@@ -1,0 +1,411 @@
+
+/************************************************
+           ==Start Base css==
+*************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+@font-face {
+    font-family: 'chunkfive_exregular';
+    src: url('../fonts/chunkfive_ex.woff2') format('woff2'),
+         url('../fonts/chunkfive_ex.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {line-height: 1;font-family: 'Open Sans', sans-serif; font-weight: 400;
+font-size: 14px; padding-top:70px;}
+
+ol, ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans', sans-serif;margin-bottom: 20px;	margin-top:0px; color:#233d61; font-weight:600;line-height:1.2}
+
+a {	transition: 0.3s ease-in-out;-webkit-transition: 0.3s ease-in-out;	-ms-transition: 0.3s ease-in-out;-moz-transition: 0.3s ease-in-out;}
+a:focus { text-decoration: none;}
+a:focus {  outline: 0 solid }
+
+input:focus, textarea:focus{ outline: none;}
+p{line-height: 22px; margin-bottom:20px;}
+img {max-width: 100%;}
+select{-webkit-border-radius: 0;-moz-border-radius: 0; border-radius: 0;}
+ul{ margin-bottom:30px; margin-left: 20px;}
+ul li{ margin-bottom:10px; list-style: disc;}
+ul.tag{ margin-left:0px;}
+ul.tag li {list-style: none; border: 1px solid #000; display: inline-block; padding:8px 10px;margin-right: 10px;cursor: pointer}
+ul.tag li:hover{ border:1px solid #ff825c;}
+strong, b{ font-weight: 700;}
+
+/************************************************
+           ==Tyography css==
+*************************************************/
+h1, .h1 {font-size:35px;}
+h2, .h2 {font-size:30px;}
+h3, .h3 {font-size:24px;}
+h4, .h4 {font-size:20px;}
+h5, .h5 {font-size:14px;}
+.section-heading{font-family: 'chunkfive_exregular'; color:#141480;line-height:44px; margin-bottom:50px; letter-spacing:1px;}
+.off-white-bg{background:#f9fbfd;}
+.btn.btn-primary{padding:13px 50px; display: inline-block; background:#ff825c; border:none; font-size:18px; color:#fff; line-height:1; font-weight:600; border-radius:50px; outline:none;}
+.btn.btn-primary:hover, .btn.btn-primary:focus{ background:#d3532c;outline:none;}
+.font-semi-bold{ font-weight:600}
+.font-bold{ font-weight:700}
+.white{ color:#fff;}
+
+/************************************************
+           ==Header css==
+*************************************************/
+.header .navbar-default{ min-height:auto; margin-bottom:0px; border: none; border-radius:0px;background:#f9fbfd; padding:15px 0;}
+.header .navbar-brand{ height: auto;padding:0; color:#000000; font-size:14px; font-weight: 700; margin-right:15px; margin-top:0px; margin-left:15px;}
+.header .navbar-brand >img{ display: inline-block; max-width:60px; vertical-align:middle}
+.header .navbar-brand span{font-family: 'Oswald', sans-serif; display: inline-block; vertical-align: middle; color:#ff825c; font-size:20px; line-height:1.2;}
+.header .navbar-nav{ margin-bottom:0px;}
+.header .navbar-nav>li{ margin-bottom:0px;}
+.header .navbar-nav>li>a{ padding-top:10px;padding-bottom:10px; color:#424570;}
+.header .navbar-default .navbar-nav>.active>a, .header .navbar-default .navbar-nav>.active>a:focus, .header .navbar-default .navbar-nav>.active>a:hover{ background: none; color:#141480; font-weight:700;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{ background:none;}
+.header .navbar-nav.navbar-right li:last-child a{ color:#ff825c;font-weight: 600;}
+.header .navbar-nav>li>.dropdown-menu li{ list-style: none; margin-bottom:0px;}
+.header .navbar-default .navbar-toggle{background-color: #141480;border-color: #141480;
+margin-right: 15px; margin-top:3px; margin-bottom: 0px;}
+.header .navbar-default .navbar-toggle .icon-bar{ background-color:#fff;}
+.header .navbar-default .navbar-toggle:focus, .header .navbar-default .navbar-toggle:hover{background-color: #141480;}
+.header .navbar-default .navbar-collapse, .header .navbar-default .navbar-form{ margin-top:15px;}
+
+/************************************************
+           ==Banner css==
+*************************************************/
+.banner{ padding:0px;}
+.banner-content{ text-align: center; position: absolute; top:70px; left:0px; display: inline-block; width:100%; padding:0 15px;}
+.banner-content h2{ margin-bottom:20px; color:#fff; opacity:0.8; font-size:26px; line-height:1.2;}
+.banner-content p{ margin-bottom:20px;color:#fff; font-size:14px; font-weight:300; line-height:24px; }
+.banner .item{ text-align: center; height:420px; background-size: cover !important;background-position: center center;}
+.banner .owl-nav .owl-prev{background:black;display: inline-block; height: 40px; width: 40px; text-align: center;position: absolute; top: 50%;line-height: 40px;left: 0px;
+font-size: 12px; color: #fff; margin-top:-20px;}
+.banner .owl-nav .owl-next{background:black;display: inline-block; height: 40px; width: 40px; text-align: center;position: absolute; margin-top:-20px; top: 50%;line-height: 40px;right:0px;
+font-size: 12px; color: #fff;}
+
+/************************************************
+           ==Service Provider css==
+*************************************************/
+.service-provide-bg{ padding:50px 0px;}
+.service-provide-bg a{ text-decoration: none;}
+.service-provide-bg a:focus,.service-provide-bg a:hover{text-decoration: none;}
+.service-provide-box{background:#fff; padding:47px 15px; text-align: center;box-shadow:0 0 20px rgba(0,0,0,0.1); margin-bottom:20px;}
+.service-provide-box .icon-box{ display:inline-block; width:73px; height: 73px; background:#ff825c; border-radius:50%; padding-top:25px; margin-bottom:30px;}
+.service-provide-box .icon-box img{ height:22px; margin: 0 auto;}
+.service-provide-box .icon-box.icon-work{ padding-top:20px;}
+.service-provide-box .icon-box.icon-work img{ height:30px;}
+.service-provide-box .icon-box.icon-technology{ padding-top:20px;}
+.service-provide-box .icon-box.icon-technology img{ height:30px;}
+.service-provide-box h5{ margin-bottom:30px; font-size:16px;}
+.service-provide-box p{ margin-bottom:0px; font-weight:300; color:#737c9b; line-height:20px;}
+
+/************************************************
+           ==Solution Services css==
+*************************************************/
+.solutions-bg{ padding:50px 0;}
+.solutions-bg a:focus,.solutions-bg a:hover{text-decoration: none;}
+.solutions-box{padding:30px 10px;box-shadow:0 0 20px rgba(0,0,0,0.1);  margin-top:30px; text-align: center;}
+.solutions-box .icon-box{ margin-bottom:20px; display: inline-block;}
+.solutions-box h4{ font-size:20px; line-height:1.2; margin-bottom: 20px;}
+.solutions-box .icon-box img{ height:73px;}
+.solutions-box p{ font-weight:300; color:#737c9b; line-height:20px; margin-bottom:0px;}
+
+/************************************************
+           ==Our clients css==
+*************************************************/
+.our-clients{ padding:50px 0px;}
+.our-clients .section-heading{ margin-bottom:30px;}
+.client-block{ margin-top:30px; margin-bottom: 0px;}
+.client-block li{ list-style: none;}
+.client-block li .client-box{ vertical-align: middle;display:inline-block; width:49%; margin-bottom:30px;}
+.client-block li .client-inner img { max-width:100px; margin: 0 auto;}
+
+
+/************************************************
+           ==Footer css==
+*************************************************/
+.footer{ padding:40px 0 40px; text-align: center; background:#1c233d; color:#fff;}
+.footer h3{ color:#fff; line-height:1.4;font-size:30px; margin-bottom:30px;}
+.footer p{ margin-bottom: 0px;}
+.contact-email{ margin-bottom:40px;}
+.contact-email .form-control{ background:#303b5b; box-shadow: none; float:left;width:60%; margin-right:2%; height:56px; border: none;}
+.contact-email .btn-estimate{ padding:20px 0; float: left;border-radius:4px; background:#fe6347; border: none; width:38%; text-align: center; color:#fff; display: block; font-weight: 600;}
+.contact-email .btn-estimate:hover, .contact-email .btn-estimate:focus{ background:#e04428}
+.footer-logo{line-height:1.1; display: inline-block; margin-bottom:20px;color:#fff;}
+.footer-logo img{display: inline-block; max-width: 60px; vertical-align: middle;}
+.footer-logo span{font-size: 25px;line-height: 1.2;display: inline-block; vertical-align: bottom; font-family: 'Oswald', sans-serif}
+.footer-logo span.logo-tagline{display: block;font-size: 12px;border-top: 1px solid #fff;
+margin-top: 10px;text-align: right;font-family: 'Open Sans', sans-serif;
+padding-top: 5px;font-style: italic;}
+.footer-logo:hover, .footer-logo:focus{ color:#fff; text-decoration: none;}
+.footer-nav{ margin-bottom:40px; margin-top:30px; text-align: center;}
+.footer-nav li{ display: inline-block; margin-right:13px; margin-bottom:10px;}
+.footer-nav li:last-child{ margin-right:0px;}
+.footer-nav li a{ color:#fff;}
+.footer-nav li a:hover, .footer-nav li a:focus{ color:#fe6347;}
+.footer-social{text-align:center; margin-bottom:0px;}
+.footer-social li{ display: inline-block; margin-right:15px; margin-bottom:0px;}
+.footer-social li:last-child{ margin-right:0px;}
+.footer-social li a{ color:#fff;}
+.footer-social li a:hover, .footer-social li a:focus{ color:#fe6347;}
+.footer-contact{margin-top:20px}
+.footer-contact p{ margin-bottom:15px; font-size:15px;}
+.footer-contact p i{ display: block; margin-bottom:5px; font-size:20px;}
+.footer-contact p:last-child{ margin-bottom:0px;}
+.cerficate-slider{ margin-top:25px;}
+.cerficate-slider img{ max-width:100px; display: block; margin: 0 auto;}
+
+/************************************************
+           ==Who we are Page css==
+*************************************************/
+.who-we-are-block{ padding:20px 0;text-align: center}
+.who-we-are-block .section-heading{ margin-bottom:20px;}
+.who-we-are-block .service-provide-box{ margin-bottom:30px;padding:30px 15px;}
+.who-we-are-block .service-provide-box h5{ margin-bottom:20px;}
+.who-we-are-block ul{ text-align: left;}
+.who-we-are-block ul li ul{ margin-top: 10px;}
+
+/************************************************
+           ==Technology Services Page css==
+*************************************************/
+.pano-banner{ min-height:400px; background: url(../images/technology-banner.jpg) no-repeat top center; width:100%;}
+.pano-banner.pano-it-works{background: url(../images/itconsulting-banner.jpg) no-repeat; width: 100%; background-size:cover;}
+.pano-banner.pano-consulting{background: url(../images/consulting-banner.png) no-repeat; width: 100%; background-size:cover;}
+.pano-banner.pano-career{background-size:cover;background: url(../images/career-banner.jpg) no-repeat;}
+.pano-banner-content{ display: table; height:400px; width:100%;  text-align: center;}
+.pano-banner-content .pano-inner{ display: table-cell; vertical-align: middle; color:#fff;}
+.pano-banner-content .pano-inner .section-heading{ color:#fff; opacity:0.8; margin-bottom:15px}
+.pano-banner-content .pano-inner p{ margin-bottom:0px;}
+.technology-services-block{ padding:50px 0 ; text-align: center}
+.technology-services-block ul{ text-align: left;}
+.technology-services-block .section-heading{ margin-bottom:30px;}
+.technology-img{ margin-top:30px;}
+
+/************************************************
+           ==Blog Page css==
+*************************************************/
+.blog-banner{ background: url(../images/blog-bg.jpg) no-repeat center center; background-size: cover; padding:50px 0 30px; position: relative;}
+.blog-banner:before{position: absolute; top:0px; left:0; height:100%; width:100%; background:#0a0a0a; opacity:0.8; content: "";}
+.blog-banner .blog-box{ border-radius:4px;background:#f9fbfd; box-shadow:0 0 20px rgba(0,0,0,0.1); margin-bottom:20px;}
+.blog-img{ height:150px; overflow: hidden}
+.blog-img img{ object-fit: cover; width:100%; border-radius:4px;}
+.blog-head{ padding:15px;}
+.blog-head h5{ margin-bottom:10px;}
+.blog-head h5 a{ text-decoration: none;}
+.blog-box .blog-info .date{ display: inline-block;}
+.blog-box .blog-info .blog-category{ background:#ff825c; padding:3px 5px; display: inline-block; margin-left:10px; border-radius:4px; font-size:12px; text-transform: uppercase; color:#fff; font-weight:600;}
+.blog-body{ padding:0 15px;}
+.blog-footer{ padding:15px; border-top:1px solid #ccc;}
+.blog-footer ul{ margin:0; padding: 0;}
+.blog-footer ul li{ display: inline-block; margin-right: 10px; list-style: none;}
+.blog-footer ul li a{ color:#141480}
+.blog-footer ul li a i{ margin-right: 10px;}
+
+
+/************************************************
+           ==Media Queries css==
+*************************************************/
+
+/*Mobile Screen */
+@media only screen and (max-width:767px) {
+ 
+}
+
+/*Ipad portrait Screen */
+@media only screen and (min-width:768px) {
+
+body{ padding-top:80px;}    
+/************************************************
+           ==Tyography css==
+*************************************************/
+h1, .h1 {font-size: 40px;}
+h2, .h2 {font-size: 34px;}
+h3, .h3 {font-size: 28px;}
+h4, .h4 {font-size: 24px;}
+h5, .h5 {font-size: 18px;}
+.btn.btn-primary{ padding:15px 50px; font-size:20px;}    
+p{margin-bottom:30px;}    
+
+/************************************************
+           ==Header css==
+*************************************************/
+.header .navbar-default{padding:20px 0; background:#fff;}    
+.header .navbar .navbar-brand{ margin-top:0px; margin-left:0px;}   
+.header .navbar-brand >img{  max-width:50px;}
+.header .navbar-brand span{font-size:20px;}        
+.header .navbar-nav>li>a{ padding-left:5px; padding-right:5px;  padding-top:10px; padding-bottom:10px; font-size:12px;}    
+.header .navbar-default .navbar-collapse, .header .navbar-default .navbar-form{ margin-top:0px;}    
+.header .navbar-nav.navbar-right{ margin-right:0px;}    
+.header .navbar-nav>li.dropdown a:before{ display: none;}    
+.header .navbar-nav>li.dropdown:hover .dropdown-menu{ display: block}
+.header .navbar-nav>li.dropdown .dropdown-menu{ background:#fff; border: none; box-shadow: 0px 0px 8px rgba(0,0,0,0.2); margin:0; padding:0; width:200px;}
+.header .navbar-nav>li.dropdown .dropdown-menu li{ border-bottom:1px solid #ddd}        
+.header .navbar-nav>li.dropdown .dropdown-menu li a{ padding:8px 20px; }
+.header .navbar-nav>li.dropdown .dropdown-menu li a:hover{ background: none; color:#ff825c;}    
+    
+
+/************************************************
+           ==Banner css==
+*************************************************/
+.banner .item{ height:650px;}    
+.banner-content{ top:150px;}
+.banner-content h2{ margin-bottom:30px; font-size:30px; line-height:40px;}
+.banner-content p{ font-size:22px;line-height:32px; margin-bottom:30px;}
+    
+/************************************************
+           ==Service Provider css==
+*************************************************/
+.service-provide-bg{ padding:124px 0px;}
+.service-provide-box{min-height:347px; margin-bottom:0px;}
+
+/************************************************
+           ==Solution Services css==
+*************************************************/
+.solutions-bg{ padding:100px 0;}    
+.solutions-box{min-height:265px; }
+
+/************************************************
+           ==Our clients css==
+*************************************************/
+.our-clients{ padding:100px 0 160px;}
+.our-clients .section-heading{ margin-bottom:50px;}    
+.client-block{ margin-top:30px;}
+.client-block li{float:left; width:16.66%; border-left:1px solid #ccc;}
+.client-block li:first-child{ border-left: none;}    
+.client-block li .client-inner img { max-width:90px;}
+.client-block li .client-box{ display: block; border-top:1px solid #ccc; width:100%; margin-bottom:0px;}
+.client-block li .client-box:first-child{ border-top:none;}
+.client-block li .client-logo{ display: table; height:125px; width:100%; text-align: center}
+.client-block li .client-inner{ display: table-cell; vertical-align: middle;}
+
+/************************************************
+           ==Technology Services Page css==
+*************************************************/
+.pano-banner{ min-height:650px;}
+.pano-banner-content{ height:650px;}
+.pano-banner-content .pano-inner p{ font-size:22px; line-height:32px;}    
+.technology-services-block{ padding:100px 0 ; text-align: left;}
+.technology-img{ margin-top:0px;}    
+    
+/************************************************
+           ==Footer css==
+*************************************************/
+.footer{ padding:60px 0px;}    
+.footer h3{ font-size:40px; margin-bottom:50px;}    
+.footer-logo{ margin-bottom:30px; font-size:34px;}    
+.contact-email{ margin-bottom:90px;}    
+.footer-nav li{ margin-bottom:0;}
+
+
+/************************************************
+           ==Who we are Page css==
+*************************************************/
+.who-we-are-block{ padding:40px 0; text-align: left;}    
+.who-we-are-block .service-provide-box{ min-height:321px;}
+
+/************************************************
+           ==Blog Page css==
+*************************************************/
+.blog-banner{ padding: 100px 0;}
+.blog-banner .blog-box{margin-bottom:0px;}    
+    
+    
+}
+
+/*Ipad landscape Screen */
+@media only screen and (min-width:992px) {
+
+body{ padding-top:101px;}    
+/************************************************
+           ==Header css==
+*************************************************/
+.header .navbar .navbar-brand{ margin-left:2px;}       
+.header .navbar-brand >img{  max-width:90px;}
+.header .navbar-brand span{font-size:25px; line-height:1.2;}    
+.header .navbar-nav>li>a{ position: relative;padding-left:10px; padding-right:10px; font-size:14px;}
+.header .navbar-default .navbar-collapse, .header .navbar-default .navbar-form{ margin-top:14px;}
+.header .navbar-nav>li>a:before{content:""; position: absolute; z-index: 2;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);bottom: 0px;width: 0;height: 3px;background: transparent; -webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out;}
+.header .navbar-nav>li>a:hover:before{ width:100%; background:#141480;} 
+
+    
+/************************************************
+           ==Service Provider css==
+*************************************************/
+.service-provide-box{min-height:383px;}    
+.service-provide-box h5{ font-size:20px;}    
+.service-provide-box p{ font-size:18px; line-height:26px;}        
+    
+    
+
+/************************************************
+           ==Solution Services css==
+*************************************************/
+.solutions-box{min-height:353px;}
+.solutions-box p{ font-size:18px; line-height:26px;}    
+    
+    
+/************************************************
+           ==Our clients css==
+*************************************************/
+.client-block li .client-inner img { max-width:120px;}
+    
+
+/************************************************
+           ==Footer css==
+*************************************************/
+.footer{ text-align: inherit;}    
+.footer-nav{ text-align: right;} 
+.footer-social{text-align:right}    
+.footer-nav li{ display: inline-block; margin-right:13px;}
+.footer-contact p i{float: left; width:35px; margin-top:2px; font-size:22px; margin-bottom:5px;}
+.cerficate-slider{ margin-top:0px;}    
+.cerficate-slider img{ max-width:130px; }    
+
+/************************************************
+           ==Who we are Page css==
+*************************************************/
+.who-we-are-block .service-provide-box{ min-height:360px;}
+    
+    
+}
+
+/*large Monitor Screen */
+@media only screen and (min-width:1200px) {
+    
+/************************************************
+           ==Header css==
+*************************************************/
+.header .navbar-nav>li>a{ padding-left:15px; padding-right:15px;}
+    
+
+/************************************************
+           ==Service Provider css==
+*************************************************/
+.service-provide-box{min-height:357px;}  
+    
+/************************************************
+           ==Solution Services css==
+*************************************************/
+.solutions-box{min-height:327px;}
+    
+
+/************************************************
+           ==Who we are Page css==
+*************************************************/
+.who-we-are-block .service-provide-box{ min-height:320px;}
+    
+}
